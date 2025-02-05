@@ -11,8 +11,6 @@ public class RemoveDuplicatesInArray {
             }
         }
         return slow+1;
-
-
     }
 
     public static void main(String[] args) {

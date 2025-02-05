@@ -21,14 +21,14 @@ public class FindKthSmallestValue {
     public static int findKthSmallestValue(int[] arr,int k){
         int uniqueCount = 0;
         int firstNum = Integer.MIN_VALUE;
-        for(int i=0;i<arr.length;i++){
-            if(arr[i] != firstNum){
+        for (int j : arr) {
+            if (j != firstNum) {
                 uniqueCount++;
-                if(uniqueCount == k){
-                    return  arr[i];
+                if (uniqueCount == k) {
+                    return j;
                 }
             }
-            firstNum = arr[i];
+            firstNum = j;
 
         }
         return -1;
